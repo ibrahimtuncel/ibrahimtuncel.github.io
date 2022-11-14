@@ -28,12 +28,6 @@
 </head>
 <body>
 
-
-
-
-    <iframewidth="400" height="300";
-    src="https://www.youtube.com/watch?v=ooXHIJttcJg"></iframewidth>
-
     <!--burası comment yeri-->
     <h1><strong>Ilk Sayfa</strong></h1>
     <a href="#Ana Sayfa Haberleri">Ana Sayfa Haberleri</a>
@@ -44,9 +38,9 @@
 
     <h3 id="Ana Sayfa Haberleri">Ana Sayfa Haberleri</h3>
     <ul>    <!--unorder list-->
-        <li> Dolar 18.50 TL odu</li>
+        <li class="ilkli"> Dolar 18.50 TL odu</li>
         <li id="kirmisi">Araba satışları düştü</li>
-        <li style="color:brown;background-color: rgb(218, 218, 49)"">Futbolda bu hafta</li>
+        <li style="color:brown;background-color:yellow">Futbolda bu hafta</li>
         <li>Bakan' dan EYT acıklaması</li>
     </ul>
 
@@ -55,10 +49,10 @@
     <h3>Yemek Tarifi(Peynirli Yumurta)</h3>
 
     <ol>    <!--order list--> <!--style="list-style-type: lower-greek or upper-roman";-->
-        <li> Kullanmak istediğiniz cins peyniri rendeleyin.Yumurtaları çukur bir kaseye alarak çırpın.</li>
-        <li>Tereyağını tavaya alın ve eritin, içine peyniri ekleyin.</li>
+        <li class="ilkli"> Kullanmak istediğiniz cins peyniri rendeleyin.Yumurtaları çukur bir kaseye alarak çırpın.</li>
+        <li id="kirmisi">Tereyağını tavaya alın ve eritin, içine peyniri ekleyin.</li>
         <li>Peynir eriyene kadar tahta kaşık ile kısık ateşte karıştırın.</li>
-        <li>Çırptığınız yumurtaları peynirin üzerine dökün ve hızlıca karıştırın.</li>
+        <li id="mavi">Çırptığınız yumurtaları peynirin üzerine dökün ve hızlıca karıştırın.</li>
         <li>Isıttığınız ekmek diliminin üstüne pişen yumurtayı alın. Maydanoz ve pul biber serperek servis yapın.</li>
     </ol>
 
@@ -69,7 +63,7 @@
     <ul>
         <li><a href="Hikayeler/Hikaye1.html">Ti ve kaplan hikayesi icin lutfen tiklayinis. </a><br></li>
         <li><a href="Hikayeler/Hikaye2.html">Keloğlan hikayesi icin lutfen tiklayinis. </a><br></li>
-        <li><a href="Hikayeler/Hikaye3.html">Kaplumbağa hikayesi icin lutfen tiklayinis. </a><br></li>
+        <li class="ilkli"><a href="Hikayeler/Hikaye3.html">Kaplumbağa hikayesi icin lutfen tiklayinis. </a><br></li>
     </ul>
     
     <h3 id="sarkilar">Sarki Sozleri</h3>
@@ -77,22 +71,22 @@
 
     <h3>Odul Adayları</h3>
     <dl> <!--definition list, tanımlı liste-->
-        <dt>Pop musik adaylari</dt>
+        <dt class="ilkli">Pop musik adaylari</dt>
         <dd>ali veli,hasan,ahmet</dd>
         <dt>Turku adaylari</dt>
-        <dd class="ilkli";>ayse, aliye, hakan</dd>
+        <dd>ayse, aliye, hakan</dd>
         <dt>Yabancı musik adaylari</dt>
-        <dd>John, Ronald,David</dd>
+        <dd class="ilkli">John, Ronald,David</dd>
     </dl>
 
     <h3 id="menu">Menu</h3>
 	<dl><!-- Definition List, tanimli liste-->
-		<dt>Latte</dt>
+		<dt class="ilkli">Latte</dt>
 		<dd>Sutlu Kremali bol kopuklu kahve</dd>
 		<dt>Mocha</dt>
 		<dd>Sutlu cikolatali espresso lu kahve</dd>
 		<dt>Turk Kahvesi</dt>
-		<dd>Bakir cezvede 2 tasim kaynatilmis sekerli turk kahvesi </dd>
+		<dd class="ilkli">Bakir cezvede 2 tasim kaynatilmis sekerli turk kahvesi </dd>
 	</dl>
 
     <table> <!-- Tablo -->
@@ -103,17 +97,17 @@
 		</tr> 
 		<tr>
 			<td> Bellona </td><!-- Table Data, tablo verisi -->
-			<td> Ahmet Tasdelen</td>
+			<td class="ilkli"> Ahmet Tasdelen</td>
 			<td> Istanbul</td>
 		</tr>
 		<tr>
 			<td> Alarko Kombi </td>
-			<td> Ilknur Sezer</td>
+			<td id="kirmisi"> Ilknur Sezer</td>
 			<td> Gaziantep</td>
 		</tr>
 		<tr>
 			<td> Man Kamyon </td>
-			<td> Oguz Ergin</td>
+			<td id="mavi"> Oguz Ergin</td>
 			<td> Ankara</td>
 		</tr>
 		<tr>
@@ -125,7 +119,15 @@
 		
 	</table>
 
+    <p>asagıda site baglantıları vardır.</p>
+
     <img src="../resimler/dogaResmi.jpg" alt="Örnek doga resmi"width="304" height="228">
+
+    <iframe width="100" height="60";
+    src="https://www.youtube.com/watch?v=ooXHIJttcJg"></iframe>
+
+   <!--<iframe width="400" height="300";
+    src="https://www.izlesene.com/video/kurtulus-kus-burak-bulut-agla-gozum/10712975"></iframe>-->
 
 </body>
 </html>

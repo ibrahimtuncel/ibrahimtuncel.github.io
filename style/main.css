@@ -1,0 +1,37 @@
+table,th,td{
+    border: 3px inset rgba(255, 0, 21);
+}
+a{
+    font-size: xx large;
+}
+li{
+    background-color:yellow;
+}
+
+p{
+    color:rgb(255, 0, 212)
+}
+
+img{
+    width: 25%;
+}
+
+h1{
+    font-size: 48pt;
+    font-family: 'Times New Roman, Times, serif';
+    font-weight:bold;
+}
+
+#kirmisi{
+    color:rgb(189, 22, 44);
+}
+
+#mavi{
+    color: white;
+    background-color: black;
+}
+
+.ilkli{
+    font-size: 28 pt;
+    font-weight: bold;
+}
