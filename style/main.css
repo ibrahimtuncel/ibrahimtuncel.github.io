@@ -9,11 +9,29 @@ li{
 }
 
 p{
-    color:rgb(255, 0, 212)
+    color: coral;
+    border: size 5px;
+    border-style:solid;
+    border-color:rgb(6, 24, 29);
+    padding-top:10px;
+    padding-left: 25px;
+
+/*    border: 5px solid rgb(189, 22, 44);*/
+   
+}
+p.ilkpara{
+    font-size: 12;
 }
 
 img{
     width: 25%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border : 5px solid rgb(6, 24, 29);
+    margin:20px 10px 20px 100px;
+
 }
 
 h1{
@@ -34,4 +52,21 @@ h1{
 .ilkli{
     font-size: 28 pt;
     font-weight: bold;
+}
+
+p:hover{
+    font-style: italic;
+}
+p::first-letter{
+    font-size: 48;
+}
+li:nth-child(even){
+    color:aqua;
+}
+a:link{
+    color:chartreuse;
+}
+
+a:visited{
+    color:darkblue;
 }
