@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Formlar</title>
-    <!--<link rel="stylesheet" href="../style/main.css"/>-->
 </head>
 <body>
-
-    <form action="yanit.html"method="POST">
+    <form action="forms2.php" method="POST">
         <table>
             <tr>
                 <td>Kullanici Adi:</td>
-                <td><input type="text"  name="kullaniciAdi" autofocus placeholder="kullanici adi girinis"/></td>
+                <td><input type="text"  name="kullaniciAdi" autofocus placeholder="Kullanici adi girinis"/></td>
+            </tr>
+            <tr>
+                <td>Soyadi:</td>
+                <td><input type="text"  name="Soyadi" placeholder="Soyadi girinis"/></td>
             </tr>
             <tr>
                 <td>Telefon No:</td>
-                <td><input type="text"  name="telNo" required placeholder="TelNo girinis"/></td>
+                <td><input type="text"  name="telNo"></td>
             </tr>
             <tr>
                 <td>e-mail:</td>
@@ -27,21 +29,21 @@
             </tr>
             <tr>
                 <td>Profil tema rengi secinis</td>
-                <td><input type="color"  name="tema rengi" value="#0000ff"><td>
+                <td><input type="color"  name="temaRengi" value="#0000ff"><td>
             </tr>
 
             <tr>
                 <td>Sifre:</td>
-                <td><input type="password"  name="Sifre" required /><td>
+                <td><input type="password"  name="Sifre" required placeholder="Sifrenisi Girinis"/><td>
             </tr>
         </table>
-        <p>MemleketNeresi?</p>
+        <p>Memleketinis Neresi?</p>
         <select name="sehir">
             <option value="sehir-Ankara">Ankara</option>
             <option value="sehir-Adana">Adana</option>
-            <option value="sehir-Bursa" selected>Bursa</option>
+            <option value="sehir-Bursa" >Bursa</option>
             <option value="sehir-Antep">Antep</option>
-            <option value="Diger">Diger</option>
+            <option value="Diger" selected>Diger</option>
         </select><br>
         <p>Hobilerinis nelerdir:</p>
         <table>
@@ -51,7 +53,7 @@
             </tr> 
        <tr>
         <td>Musik</td>
-        <td><input type="checkbox" name="hobiler[]" checked value="Musik"></td>
+        <td><input type="checkbox" name="hobiler[]" value="Musik"></td>
        </tr> 
        <tr>
         <td>Pastacilik</td>
@@ -88,12 +90,12 @@
         </table>
 
         <p>lutfen dusuncelerinisi belirtinis</p>
-        <textarea rows="4" cols="60" name="Yorumlar" placeholder="Telefon numaranisi 
-        girdikten sonre Yorumlarinisi belirtinis" maxlength="250"  minlength="5"></textarea><br>
+        <textarea rows="4" cols="60" name="Yorumlar" placeholder="Telefon numaranisi girdikten sonre Yorumlarinisi belirtinis" 
+        maxlength="50"  minlength="5"></textarea><br>
 
 
         
-        <input type="submit" value="kayıtOl"/>
+        <input type="submit" value="Kayıt Ol"/>
         <input type ="reset" value="tercihleri sil"/>
 
       </form>   
