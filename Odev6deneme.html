@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Buton Yakalama Oyunu</title>
+<style>
+	#nesne{
+		width: 120px;
+		height: 60px;
+		position:absolute;
+		background:#36A4FF;
+        color:white;
+        border-radius: 8px;
+	}
+</style>
+</head>
+ 
+<body>
+ 
+	<script>
+		var level=0;
+        
+		//var nesne=document.getElementById("nesne");
+        var sure=setTimeout((nesne.over), 2000);
+ 
+		function over()
+		{   
+            
+
+			var xpos=parseInt(Math.random()*300);
+			var ypos=parseInt(Math.random()*300);
+			
+			nesne.style.left=xpos +"px";
+			nesne.style.top =ypos+"px";
+            //nesne.setTimeout((over),1000);
+          
+            
+		}
+        
+        function tik()
+		{
+            level++;
+            if (level==3){
+                window.alert("Tebrikler level "+level/3+" e atladınıs");
+                nesne.setTimeout((over),400);
+            }
+            else if (level==6){
+                window.alert("Tebrikler level "+level/3+" e atladınıs");
+                nesne.setTimeout((over),300);
+            }
+            else if (level==9){
+                window.alert("Tebrikler level "+level/3+" e atladınıs");
+                nesne.setTimeout((over),200);
+            }
+            else if (level==12){
+                window.alert("Tebrikler level "+level/3+" e atladınıs");
+                nesne.setTimeout((over),100);
+            }
+            else if (level==15){
+                window.alert("Tebrikler level "+level/3+" e atladınıs");
+                nesne.setTimeout((over),0);
+            }
+        }
+      
+			
+	</script>
+    <button id="nesne" onmouseover="over(this)" onclick="tik(this)" >Click me</button>
+
+
+</body>
+</html>
