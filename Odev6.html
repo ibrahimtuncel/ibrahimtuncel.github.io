@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Buton Yakalama Oyunu</title>
+<style>
+	#nesne{
+		width: 120px;
+		height: 60px;
+		position:absolute;
+		background:#36A4FF;
+        color:white;
+        border-radius: 8px;
+	}
+</style>
+</head>
+ 
+<body>
+ 
+	<script>
+		var level=0;
+ 
+		function over()
+		{   
+        	var xpos=parseInt(Math.random()*1000);
+			var ypos=parseInt(Math.random()*600);
+			
+			nesne.style.left=xpos +"px";
+			nesne.style.top =ypos+"px";                     
+		}       
+
+        function tik()
+		{
+            level++;
+            if (level==3){
+                window.alert("Tebrikler level "+level/3+" e atladınıs");
+             
+            }
+            else if (level==6){
+                window.alert("Tebrikler level "+level/3+" e atladınıs");
+               
+            }
+            else if (level==9){
+                window.alert("Tebrikler level "+level/3+" e atladınıs");
+                
+            }
+            else if (level==12){
+                window.alert("Tebrikler level "+level/3+" e atladınıs");
+                
+            }
+            else if (level==15){
+                window.alert("Tebrikler level "+level/3+" e atladınıs");
+                
+            }
+        }
+        function bekleme()
+    {
+        const bekle =setTimeout(over,500-((level/3)-1)*100);
+    }
+      
+			
+	</script>
+    <button id="nesne" onmouseover="bekleme();" onclick="tik();" >Click me</button>
+
+
+</body>
+</html>
